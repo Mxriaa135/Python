@@ -1,3 +1,5 @@
+import os
+os. system("cls")
 marca=[]
 modelo=[]
 motor=[]
@@ -10,8 +12,9 @@ while resposta == "SIM":
     motor.append(input("O motor: "))
     potencia.append(input("A potencia: "))
     resposta=input("Deseja adicionar mais algum carro?(SIM/NÃO): ").upper()
+    os. system("cls")
 
-for carro in range(0,len(marca),1):
+for carro in range(0,len(motor),1):
     print("Marca:", marca[carro])
     print("Modelo:", modelo[carro])
     print("motor:", motor[carro])
